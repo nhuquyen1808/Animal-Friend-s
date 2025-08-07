@@ -31,6 +31,10 @@ public class ItemCoin : MonoBehaviour
         var coin =  PlayerPrefs.GetInt(PlayerPrefsManager.Coin, 0);
         coin += coinReceive;
         PlayerPrefs.SetInt(PlayerPrefsManager.Coin, coin);
-      //  GameplayUI.Instance.UpdateCoin();
+        LogicMenu.instance.GetData();
+        //GameplayUI.Instance.UpdateCoin();
+        
+        Debug.Log("-------------------------- " + coin);
+        
     }
 }

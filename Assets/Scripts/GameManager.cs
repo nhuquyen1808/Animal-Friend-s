@@ -78,6 +78,7 @@ public class GameManager : MonoBehaviour
         gameUiManager.SetShuffleText(shuffleAmount);
         gameUiManager.freezeText.text = freezeAmount.ToString();
         gameUiManager.UpdaeCoinText(coin);
+   
         currentLevel = PlayerPrefs.GetInt(PlayerPrefsManager.levelUnlock);
         if (currentLevel == 0)
         {
@@ -129,15 +130,12 @@ public class GameManager : MonoBehaviour
 
     public void GenerateBoard()
     {
-        Debug.Log("4444");
-
         lineRenderer.positionCount = 0;
         spacingX = tilePrefab.GetComponent<BoxCollider2D>().size.x;
         spacingY = tilePrefab.GetComponent<BoxCollider2D>().size.y;
         //tilePrefab.GetComponent<BoxCollider2D>().enabled = false;
         grid = new GameObject[rows + 2, cols + 2];
         List<Sprite> usedSprites = GenerateShuffledSprites();
-        Debug.Log("5555");
 
         StartCoroutine(SetUpTiles(usedSprites));
     }
@@ -163,15 +161,11 @@ public class GameManager : MonoBehaviour
 
     IEnumerator SetUpTiles(List<Sprite> sprites)
     {
-        Debug.Log("6666");
-
         int index = 0;
         Vector2 offset = new Vector2(-((cols - -1) * spacingX) / 2, ((rows - -1) * spacingY) / 2);
 
         for (int i = 1; i <= rows; i++)
         {
-            Debug.Log("7777");
-
             for (int j = 1; j <= cols; j++)
             {
                 yield return new WaitForSeconds(0.05f);
@@ -421,8 +415,6 @@ public class GameManager : MonoBehaviour
 
     public bool NoMoreMoves()
     {
-        Debug.Log("88888888888");
-
         if (lastHintedTile1 != null && lastHintedTile1 != null && lastHintedTile1.highlightBorder != null)
             lastHintedTile1.SetHighlight(false);
         if (lastHintedTile2 != null && lastHintedTile2 != null && lastHintedTile2.highlightBorder != null)

@@ -37,11 +37,13 @@ public class ShopController : Singleton<ShopController>
 
     }
 
-    public void InitializeItemCoins()
+      public void InitializeItemCoins()
     {
-        for (int i = 0; i < lstItemCoin.Count; i++)
+      //  for (int i = 0; i < lstItemCoin.Count; i++)
+            for (int i = lstItemCoin.Count-1; i>=0; i--)
         {
             var product = IAPController.Instance.GetProductByKey(lstItemCoin[i].Key);
+            Debug.Log($"InitializeItemCoins: name:{gameObject.name} key:{lstItemCoin[i].Key} {product==null}");
             var price = product != null ? product.metadata.localizedPriceString : "N/A";
             lstItemCoin[i].Init(price, OnClickItem);
         }
@@ -51,9 +53,20 @@ public class ShopController : Singleton<ShopController>
     public void OnClickItem(string key)
     {
         var product = IAPController.Instance.GetProductByKey(key);
+        Debug.Log($"OnClickItem: name:{gameObject.name} key:{key}");
         if (product != null)
         {
-            // Code to handle the purchase using the product information
+            string resultMessage;
+            bool success = IAPController.Instance.BuyProduct(key, out resultMessage);
+
+            if (success)
+            {
+                Debug.Log("Mua thành công");
+            }
+            else
+            {
+                Debug.LogError("Mua thất bại: " + resultMessage);
+            }
             Debug.Log($"Purchased item with key: {key}, price: {product.metadata.localizedPriceString}");
         }
         else

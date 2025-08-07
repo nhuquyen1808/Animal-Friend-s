@@ -30,8 +30,10 @@ public class LogicMenu : Singleton<LogicMenu>
     public GameObject settingsPanel;
     public List<GameObject> elementsOnSettings = new List<GameObject>();
     public Button closeSettingsButton;
+    public static LogicMenu instance;
     private void Awake()
     {
+        instance = this;
         playButton.onClick.AddListener(OnClickEasyButton);
         quitButton.onClick.AddListener(OnClickQuitButton);
         shopButton.onClick.AddListener(OnClickShopButton);

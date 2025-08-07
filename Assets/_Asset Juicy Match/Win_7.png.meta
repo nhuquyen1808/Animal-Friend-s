@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 630bc35666d9454418605a2f7f0b5707
+guid: c4a6fdf5a8c742a459628cf5e4724cea
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,13 +43,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 774, y: 559, z: 778, w: 561}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -121,18 +121,150 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Win_7_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 696
+        width: 467
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c009aa178bfee5419308f3ec48ee544
+      internalID: 733032689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_7_1
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 696
+        width: 466
+        height: 188
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed673fd28496bb409ce88bf6c1f8c47
+      internalID: 665904863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_7_2
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 400
+        width: 466
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e1af05c7bc26b4b849236fec5b1ac0
+      internalID: -2464174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_7_3
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 402
+        width: 469
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3e1a6e184af2644b435c4aad1c1a54
+      internalID: -1884060095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_7_4
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 116
+        width: 464
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d01b7eec962f344a2a6faf37e0b6a2
+      internalID: 1910309922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Win_7_5
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 117
+        width: 466
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25dcf01b5ab31674a9cfaf22c833ec5f
+      internalID: 1347346825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Win_7_0: 733032689
+      Win_7_1: 665904863
+      Win_7_2: -2464174
+      Win_7_3: -1884060095
+      Win_7_4: 1910309922
+      Win_7_5: 1347346825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
